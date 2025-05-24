@@ -1,0 +1,69 @@
+.content{
+  width: 100%;
+  height: 100%;
+}
+#root{
+  width: 100%;
+  height: 100%;
+}
+.content_card{
+  background-color: yellow;
+  width: 100%;
+  height: 100vh;
+  
+}
+.clastransition{
+  transition: all, 10s;
+ 
+}
+
+.card_play{
+  background-color: red;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.point_card{
+  background: lightblue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.read-the-docs {
+  color: #888;
+}
+.imgcard{
+  width: 53vh;
+  height: 70vh;;
+}
+
+.card-fade {
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+}
+.nueva{
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  transform: perspective(1000px);
+}
+.nueva:hover{
+  background-color: red;
+  transform: translateZ(-100px);
+  transition: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
