@@ -42,20 +42,58 @@
 
 .card-fade {
   opacity: 0;
-  animation: fadeIn 0.4s ease forwards;
-}
-.nueva{
-  width: 500px;
-  height: 500px;
-  background-color: blue;
-  transform: perspective(1000px);
-}
-.nueva:hover{
-  background-color: red;
-  transform: translateZ(-100px);
-  transition: 2s;
+  animation: fadeIn 7s ease forwards;
 }
 
+
+.pespective-card{
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+/* Esta clase se aplica a la carta al activarse */
+.move-card {
+  transform: translateZ(245px);
+  transition: transform 1s, background-color 0.4s;
+  transform-style: preserve-3d;
+}
+
+.card {
+  width: 100px;
+  height: 140px;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.move-card {
+  transform: translateY(-30px);
+  background-color: red;
+}
+
+.card {
+  transition: transform 0.4s ease;
+}
+
+.move-card-x{
+  transform: translateX(-190px);
+}
+
+.move-card-xpositive{
+  transform: translateX(190px);
+}
+
+.move-card-xpositivefinish{
+  transform: translateX(570px);
+}
+.move-card-ypositivefinish{
+  transform: translateY(-190px);
+}
+
+.move-card {
+  transform: translateY(-20px);
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
