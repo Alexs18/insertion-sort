@@ -1,3 +1,7 @@
+.main-style{
+  max-width: 800px;
+  max-height: 1200px;
+}
 .content{
   width: 100%;
   height: 100%;
@@ -13,7 +17,7 @@
   
 }
 .clastransition{
-  transition: all, 10s;
+  transition: all, 3s;
  
 }
 
@@ -51,12 +55,6 @@
   perspective-origin: center;
 }
 
-/* Esta clase se aplica a la carta al activarse */
-.move-card {
-  transform: translateZ(245px);
-  transition: transform 1s, background-color 0.4s;
-  transform-style: preserve-3d;
-}
 
 .card {
   width: 100px;
@@ -64,7 +62,6 @@
   background-color: white;
   border: 1px solid #ccc;
   margin: 10px;
-  transition: transform 0.3s ease;
 }
 
 .move-card {
